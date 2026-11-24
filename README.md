@@ -92,37 +92,19 @@ Construir una plataforma web **responsiva y mobile first** que:
 
 ## 🛣️ Una Tienda, Dos Caminos
 
-<table>
-<tr>
-<th width="50%">🛒 Comprar — <i>"Hazla tuya."</i></th>
-<th width="50%">⏱️ Alquilar — <i>"Tu próxima aventura, por horas."</i></th>
-</tr>
-<tr>
-<td>
+### 🛒 Comprar — *"Hazla tuya."*
 
 ```mermaid
-flowchart TD
-  A[📚 Catálogo] --> B[🔍 Detalle]
-  B --> C[🛍️ Carrito]
-  C --> D[💳 Checkout simulado]
-  D --> E[✅ Compra confirmada]
+flowchart LR
+  A[📚 Catálogo] --> B[🔍 Detalle] --> C[🛍️ Carrito] --> D[💳 Checkout] --> E[✅ Confirmada]
 ```
 
-</td>
-<td>
+### ⏱️ Alquilar — *"Tu próxima aventura, por horas."*
 
 ```mermaid
-flowchart TD
-  A[📚 Catálogo] --> B[📅 Fecha y duración]
-  B --> C[🔎 Disponibilidad]
-  C --> D[📝 Reserva]
-  D --> E[🚲 Recogida]
-  E --> F[🔁 Devolución]
+flowchart LR
+  A[📚 Catálogo] --> B[📅 Fecha] --> C[🔎 Disponibilidad] --> D[📝 Reserva] --> E[🚲 Recogida] --> F[🔁 Devolución]
 ```
-
-</td>
-</tr>
-</table>
 
 **Categorías:** ⛰️ Montaña · 🏁 Ruta · 🏙️ Urbana
 
