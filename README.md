@@ -346,8 +346,8 @@ RODAR/
 ### 1️⃣ Clonar el repositorio
 
 ```bash
-git clone https://github.com/REN-ORDO/RODAR.git
-cd RODAR
+git clone https://github.com/REN-ORDO/Rodar.git
+cd Rodar
 ```
 
 ### 2️⃣ Instalar y correr la app
