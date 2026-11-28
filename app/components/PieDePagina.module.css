@@ -1,0 +1,12 @@
+.pie {
+  background: var(--carbon);
+  color: var(--blanco-calido);
+}
+
+.marca {
+  color: var(--lima);
+}
+
+.contenido {
+  padding-block: 24px;
+}

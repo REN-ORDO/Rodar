@@ -1,21 +1,36 @@
 import Image from "next/image";
+import estilos from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section aria-labelledby="titulo-portada" className="bg-[#151515] text-[#F5F5F0]">
-      <div className="mx-auto grid max-w-6xl items-center gap-8 px-6 py-12 md:grid-cols-2 md:py-20">
+    <section className={estilos.portada} aria-labelledby="titulo-portada">
+      <div className={`contenedor ${estilos.contenido}`}>
         <div>
-          <h1 id="titulo-portada" className="text-4xl font-bold tracking-tight md:text-6xl">
-            Compra o alquila tu próxima bicicleta
+          <p className={`etiqueta ${estilos.etiqueta}`}>Compra · Alquila · Explora</p>
+          <h1 id="titulo-portada">
+            El camino
+            <br />
+            es tuyo.
           </h1>
+          <p className={estilos.descripcion}>
+            Encuentra tu próxima bicicleta y sal a descubrir la ciudad.
+          </p>
+          <div className={estilos.acciones}>
+            <a className={`${estilos.boton} ${estilos.botonLima}`} href="#bicicletas">
+              Comprar <span aria-hidden="true">↗</span>
+            </a>
+            <a className={estilos.boton} href="#alquiler">Alquilar</a>
+          </div>
         </div>
+
         <Image
+          className={estilos.bicicleta}
           src="/bicicletas/Rodar_Hero_Transparente.webp"
-          alt="Bicicleta de rodar"
+          alt="Bicicleta de montaña gris grafito con detalles en verde lima"
           width={1536}
           height={1024}
-          sizes="(min-width: 1152px) 536px, (min-width: 768px) 50vw, 100vw"
-          className="h-auto w-full"
+          sizes="(min-width: 1280px) 650px, (min-width: 821px) 55vw, 100vw"
+          loading="eager"
         />
       </div>
     </section>
