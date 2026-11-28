@@ -7,13 +7,13 @@ import Alquiler from "./components/Alquiler";
 
 export default function Home() {
   return (
-    <>
+    <div id="inicio">
       <Encabezado />
       <main>
         <Hero />
         <BicicletasDestacadas />
         <Alquiler />
       </main>
-    </>
+    </div>
   );
 }

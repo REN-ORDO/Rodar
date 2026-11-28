@@ -1,0 +1,21 @@
+.contenido {
+  padding-block: 14px;
+}
+
+.navegacion {
+  display: flex;
+  gap: clamp(12px, 3vw, 32px);
+}
+
+.navegacion a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.navegacion a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
